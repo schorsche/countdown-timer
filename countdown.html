@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chorknaben Biberach</title>
+	<link rel="Shortcut Icon" href="img/favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="countdown-timer.js"></script> 
+	<style>
+		body{
+			font-family:'Open Sans', sans-serif;
+			background: url(px_by_Gre3g.png);
+		}
+		h1{
+			color: white;
+			text-align: center;
+			font-size: 4em;
+		}
+		section{
+			width:608px;
+			height:400px;
+		}
+		.centered{
+			top:0; bottom:0; left:0; right:0;
+			position:absolute;
+			margin:auto;
+		}
+		.number{
+			background-color:#e74c3c;
+			color:white;
+			font-size:7em;
+			padding:15px;
+			opacity:0.8;
+		}
+		.sep{
+			color:#1a171a;
+			font-size:8em;
+		}
+	</style>
+</head>
+<body>
+	<section class="centered">
+		<div class="countdown-timer">
+			<span id="h" class="number">00</span>
+			<span class="sep">:</span>
+			<span id="m" class="number">00</span>
+			<span class="sep">:</span>
+			<span id="s" class="number">00</span>
+		</div>
+		<h1>21 UHR</h1>
+	</section>
+	<script type="text/javascript">
+	var fireMissiles = function(){
+		console.log("Booooooom!")
+	}
+
+	var countDown = new CountDown({
+		// Required Settings:
+		// When to fire the Countdown...
+		targetDate: new Date(2015, 01, 11, 23, 35, 40),
+
+		// Where to put the CountDown? 
+		hours:   document.getElementById("h"),
+		minutes: document.getElementById("m"),
+		seconds: document.getElementById("s"),
+
+		// Function that should fire when countdown expires
+		onCountDownExpired: fireMissiles
+	});
+	countDown.set();
+	</script>
+</body>
+</html>
