@@ -3,6 +3,7 @@ A dead simple, date-based hh:mm:ss countdown timer (529 bytes minified + gzipped
 
 Consider this countdown timer if you need a countdown for relatively short durations in your project. 
 This countdown timer is built around the JS ```Date()``` API, so it can handle both relative and absolute timespans.
+Check out the [example](https://rawgit.com/schorsche/countdown-timer/master/example/countdown.html)
 
 ## Requirements
 A Browser supporting the ```Date()``` API.
