@@ -8,6 +8,7 @@
 	<style>
 		body{
 			font-family:'Open Sans', sans-serif;
+			/* Background pattern from subtlepatterns.com */
 			background: url(px_by_Gre3g.png);
 		}
 		h1{
@@ -29,7 +30,7 @@
 			color:white;
 			font-size:7em;
 			padding:15px;
-			opacity:0.8;
+			opacity:0.75;
 		}
 		.sep{
 			color:#1a171a;
@@ -46,9 +47,10 @@
 			<span class="sep">:</span>
 			<span id="s" class="number">00</span>
 		</div>
-		<h1>21 UHR</h1>
+		<h1>coming soon</h1>
 	</section>
 	<script type="text/javascript">
+
 	var fireMissiles = function(){
 		console.log("Booooooom!")
 	}
@@ -56,7 +58,7 @@
 	var countDown = new CountDown({
 		// Required Settings:
 		// When to fire the Countdown...
-		targetDate: new Date(2015, 01, 11, 23, 35, 40),
+		targetDate: new Date(2015, 01, 12, 23, 17, 45),
 
 		// Where to put the CountDown? 
 		hours:   document.getElementById("h"),
@@ -67,6 +69,7 @@
 		onCountDownExpired: fireMissiles
 	});
 	countDown.set();
+
 	</script>
 </body>
 </html>
