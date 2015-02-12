@@ -35,7 +35,6 @@ CountDown.intervalFunc = function(_this){
 		// Seconds to expire
 		expire = _this.options.targetDate.getTime() / 1000 
 		    - _this.options.getStartDate() / 1000;
-		console.log(expire);
 
 		// Convert Seconds to expire to hh:mm:ss
 		remainingSecs = Math.round(expire % 60) - 1;

@@ -4,7 +4,7 @@
 	<title>Chorknaben Biberach</title>
 	<link rel="Shortcut Icon" href="img/favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="countdown-timer.js"></script> 
+	<script type="text/javascript" src="../countdown-timer.js"></script> 
 	<style>
 		body{
 			font-family:'Open Sans', sans-serif;
@@ -55,10 +55,16 @@
 		console.log("Booooooom!")
 	}
 
+	// Example: targetDate is midnight
+	midnight = new Date();
+	midnight.setHours(24);
+	midnight.setMinutes(0);
+	midnight.setSeconds(0);
+
 	var countDown = new CountDown({
 		// Required Settings:
 		// When to fire the Countdown...
-		targetDate: new Date(2015, 01, 12, 23, 17, 45),
+		targetDate: midnight,
 
 		// Where to put the CountDown? 
 		hours:   document.getElementById("h"),
